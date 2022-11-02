@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+Use below html tag for RTL version
+<html lang="en" dir="rtl" direction="rtl" style="direction: rtl">
+-->
+<base href="<%= BASE_URL %>" />
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="<%= BASE_URL %>media/imageApp/logo.svg">
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,600,700|Material+Icons"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap" rel="stylesheet">
+  <title>Website Vue</title>
+</head>
+<style>
+    body {
+        font-family: 'IBM Plex Sans Thai', sans-serif !important;
+        font-size: 16px !important;
+    }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+    z-index: 2;
+    height: 80px;
+    transition: left ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(175.73deg, #6C67BC 51.41%, #4F4B98 94.89%) !important;
+    color: #ffffff !important
+  }
+
+  .drawer-overlay {
+    z-index: -1 !important;
+
+
+  }
+
+  .menu-state-bg .menu-item .menu-link.active {
+    background-color: rgb(245 248 250 / 0%) !important;
+    margin-top: 0x;
+    margin-bottom: 0px;
+    color: rgba(108, 194, 195, 1) !important;
+    border-bottom: 5px solid rgba(108, 194, 195, 1);
+    padding-top: 25px;
+    border-radius: 3px;
+    line-height: 16px;
+  }
+  .menu-link {
+    font-size: 18px;
+    color: #ffffff !important
+}
+.menu-state-bg .menu-item.hover > .menu-link:not(.disabled):not(.active), .menu-state-bg .menu-item .menu-link:hover:not(.disabled):not(.active) {
+  background-color: rgb(245 248 250 / 0%) !important;
+    margin-top: 0x;
+    margin-bottom: 0px;
+    color: rgba(108, 194, 195, 1) !important;
+    border-bottom: 5px solid rgba(108, 194, 195, 1);
+    padding-top: 25px;
+    border-radius: 3px;
+    line-height: 16px;
+}
+.drawer {
+    display: flex !important;
+    overflow: auto;
+    z-index: 110;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: #03315c !important;
+    transition: transform 0.3s ease-in-out;
+}
+.menu-sub-dropdown {
+    display: none;
+    border-radius: 0.475rem;
+    background-color: #03315c !important;
+    box-shadow: 0px 0px 50px 0px rgb(82 63 105 / 10%);
+    z-index: 105;
+}
+.menu-state-bg-light-primary .menu-item.hover > .menu-link:not(.disabled):not(.active), .menu-state-bg-light-primary .menu-item .menu-link:hover:not(.disabled):not(.active) {
+  background-color: rgb(245 248 250 / 0%) !important;
+    margin-top: 0x;
+    margin-bottom: 0px;
+    color: rgba(108, 194, 195, 1) !important;
+    border-bottom: 5px solid rgba(108, 194, 195, 1);
+    padding-top: 25px;
+    border-radius: 3px;
+    line-height: 16px;
+}
+
+/* margin-top: 35vh; */
+</style>
+<!-- add class="dark-mode" to enable dark mode  -->
+
+<body style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px">
+  <noscript>
+    <strong>We're sorry but metronic-vue doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app" class="d-flex flex-column flex-root"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
